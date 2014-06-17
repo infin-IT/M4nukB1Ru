@@ -4,18 +4,41 @@ import QtQuick.Window 2.1
 Window
 {
     visible: true
-    width: 360
-    height: 360
+    width:500
+    height:500
+    color:"yellow"
 
-    MouseArea {
-        anchors.fill: parent
-        onClicked: {
-            Qt.quit();
+
+    Rectangle
+    {
+
+        width: 163
+        height: 130
+        color:"blue"
+
+        //Drag.target: parent
+
+        //Drag:parent
+        ////        Text
+        ////        {
+        ////            text:"Johhhnn"
+        ////            font: argh.name
+        ////        }
+
+        ////        FontLoader{
+        ////            id:argh
+        ////            source: "Aaargh.ttf"
+        ////        }
+
+
+        MouseArea
+        {
+            anchors.fill: parent
+            drag.target: parent
+
         }
     }
 
-    Text {
-        text: qsTr("Hello World")
-        anchors.centerIn: parent
-    }
+
+
 }
