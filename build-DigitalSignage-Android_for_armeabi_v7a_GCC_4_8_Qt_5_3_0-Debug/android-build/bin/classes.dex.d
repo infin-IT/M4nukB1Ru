@@ -1,0 +1,26 @@
+C:\Users\Yahya\Documents\GitClone\M4nukB1Ru\build-DigitalSignage-Android_for_armeabi_v7a_GCC_4_8_Qt_5_3_0-Debug\android-build\bin\classes.dex : \
+C:\Users\Yahya\Documents\GitClone\M4nukB1Ru\build-DigitalSignage-Android_for_armeabi_v7a_GCC_4_8_Qt_5_3_0-Debug\android-build\bin\classes\org\kde\necessitas\ministro\IMinistro$Stub$Proxy.class \
+C:\Users\Yahya\Documents\GitClone\M4nukB1Ru\build-DigitalSignage-Android_for_armeabi_v7a_GCC_4_8_Qt_5_3_0-Debug\android-build\bin\classes\org\kde\necessitas\ministro\IMinistro$Stub.class \
+C:\Users\Yahya\Documents\GitClone\M4nukB1Ru\build-DigitalSignage-Android_for_armeabi_v7a_GCC_4_8_Qt_5_3_0-Debug\android-build\bin\classes\org\kde\necessitas\ministro\IMinistro.class \
+C:\Users\Yahya\Documents\GitClone\M4nukB1Ru\build-DigitalSignage-Android_for_armeabi_v7a_GCC_4_8_Qt_5_3_0-Debug\android-build\bin\classes\org\kde\necessitas\ministro\IMinistroCallback$Stub$Proxy.class \
+C:\Users\Yahya\Documents\GitClone\M4nukB1Ru\build-DigitalSignage-Android_for_armeabi_v7a_GCC_4_8_Qt_5_3_0-Debug\android-build\bin\classes\org\kde\necessitas\ministro\IMinistroCallback$Stub.class \
+C:\Users\Yahya\Documents\GitClone\M4nukB1Ru\build-DigitalSignage-Android_for_armeabi_v7a_GCC_4_8_Qt_5_3_0-Debug\android-build\bin\classes\org\kde\necessitas\ministro\IMinistroCallback.class \
+C:\Users\Yahya\Documents\GitClone\M4nukB1Ru\build-DigitalSignage-Android_for_armeabi_v7a_GCC_4_8_Qt_5_3_0-Debug\android-build\bin\classes\org\qtproject\example\DigitalSignage\BuildConfig.class \
+C:\Users\Yahya\Documents\GitClone\M4nukB1Ru\build-DigitalSignage-Android_for_armeabi_v7a_GCC_4_8_Qt_5_3_0-Debug\android-build\bin\classes\org\qtproject\example\DigitalSignage\R$array.class \
+C:\Users\Yahya\Documents\GitClone\M4nukB1Ru\build-DigitalSignage-Android_for_armeabi_v7a_GCC_4_8_Qt_5_3_0-Debug\android-build\bin\classes\org\qtproject\example\DigitalSignage\R$attr.class \
+C:\Users\Yahya\Documents\GitClone\M4nukB1Ru\build-DigitalSignage-Android_for_armeabi_v7a_GCC_4_8_Qt_5_3_0-Debug\android-build\bin\classes\org\qtproject\example\DigitalSignage\R$layout.class \
+C:\Users\Yahya\Documents\GitClone\M4nukB1Ru\build-DigitalSignage-Android_for_armeabi_v7a_GCC_4_8_Qt_5_3_0-Debug\android-build\bin\classes\org\qtproject\example\DigitalSignage\R$string.class \
+C:\Users\Yahya\Documents\GitClone\M4nukB1Ru\build-DigitalSignage-Android_for_armeabi_v7a_GCC_4_8_Qt_5_3_0-Debug\android-build\bin\classes\org\qtproject\example\DigitalSignage\R.class \
+C:\Users\Yahya\Documents\GitClone\M4nukB1Ru\build-DigitalSignage-Android_for_armeabi_v7a_GCC_4_8_Qt_5_3_0-Debug\android-build\bin\classes\org\qtproject\qt5\android\bindings\QtActivity$1.class \
+C:\Users\Yahya\Documents\GitClone\M4nukB1Ru\build-DigitalSignage-Android_for_armeabi_v7a_GCC_4_8_Qt_5_3_0-Debug\android-build\bin\classes\org\qtproject\qt5\android\bindings\QtActivity$2.class \
+C:\Users\Yahya\Documents\GitClone\M4nukB1Ru\build-DigitalSignage-Android_for_armeabi_v7a_GCC_4_8_Qt_5_3_0-Debug\android-build\bin\classes\org\qtproject\qt5\android\bindings\QtActivity$3$1$1.class \
+C:\Users\Yahya\Documents\GitClone\M4nukB1Ru\build-DigitalSignage-Android_for_armeabi_v7a_GCC_4_8_Qt_5_3_0-Debug\android-build\bin\classes\org\qtproject\qt5\android\bindings\QtActivity$3$1.class \
+C:\Users\Yahya\Documents\GitClone\M4nukB1Ru\build-DigitalSignage-Android_for_armeabi_v7a_GCC_4_8_Qt_5_3_0-Debug\android-build\bin\classes\org\qtproject\qt5\android\bindings\QtActivity$3.class \
+C:\Users\Yahya\Documents\GitClone\M4nukB1Ru\build-DigitalSignage-Android_for_armeabi_v7a_GCC_4_8_Qt_5_3_0-Debug\android-build\bin\classes\org\qtproject\qt5\android\bindings\QtActivity$4.class \
+C:\Users\Yahya\Documents\GitClone\M4nukB1Ru\build-DigitalSignage-Android_for_armeabi_v7a_GCC_4_8_Qt_5_3_0-Debug\android-build\bin\classes\org\qtproject\qt5\android\bindings\QtActivity$5.class \
+C:\Users\Yahya\Documents\GitClone\M4nukB1Ru\build-DigitalSignage-Android_for_armeabi_v7a_GCC_4_8_Qt_5_3_0-Debug\android-build\bin\classes\org\qtproject\qt5\android\bindings\QtActivity$6.class \
+C:\Users\Yahya\Documents\GitClone\M4nukB1Ru\build-DigitalSignage-Android_for_armeabi_v7a_GCC_4_8_Qt_5_3_0-Debug\android-build\bin\classes\org\qtproject\qt5\android\bindings\QtActivity.class \
+C:\Users\Yahya\Documents\GitClone\M4nukB1Ru\build-DigitalSignage-Android_for_armeabi_v7a_GCC_4_8_Qt_5_3_0-Debug\android-build\bin\classes\org\qtproject\qt5\android\bindings\QtApplication$InvokeResult.class \
+C:\Users\Yahya\Documents\GitClone\M4nukB1Ru\build-DigitalSignage-Android_for_armeabi_v7a_GCC_4_8_Qt_5_3_0-Debug\android-build\bin\classes\org\qtproject\qt5\android\bindings\QtApplication.class \
+C:\Users\Yahya\Documents\GitClone\M4nukB1Ru\build-DigitalSignage-Android_for_armeabi_v7a_GCC_4_8_Qt_5_3_0-Debug\android-build\bin\dexedLibs\QtAndroid-bundled-baf48fae78d3ce9de9d43f3f35b34467.jar \
+C:\Users\Yahya\Documents\GitClone\M4nukB1Ru\build-DigitalSignage-Android_for_armeabi_v7a_GCC_4_8_Qt_5_3_0-Debug\android-build\bin\dexedLibs\QtAndroidAccessibility-bundled-e12fd933d09894ffdc83ff2422bc685e.jar \
