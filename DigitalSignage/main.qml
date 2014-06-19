@@ -8,6 +8,7 @@ Window
     visible: true
     width:500
     height:500
+<<<<<<< HEAD
     color:"red"
 
     Rectangle
@@ -39,10 +40,21 @@ Window
         {
             anchors.fill: parent
             drag.target: parent
+=======
+    color:"black"
 
-        }
+    Image
+    {
+        z:-1
+        anchors.fill: parent
+        source: "http://192.168.1.123/images/landscape.jpg"
     }
 
+    DigitalClock
+    {
+>>>>>>> e40ff237ce6d62c20ff38e6caaf371b4be916ece
+
+    }
 
 
 }

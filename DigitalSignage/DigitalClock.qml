@@ -2,19 +2,32 @@ import QtQuick 2.0
 
 Rectangle
 {
-    width: 200
-    height: 200
-    color:"blue"
-    Drag:parent
-    Text
-    {
-        text:"Johhhnn"
-        font: argh.name
-    }
 
-    FontLoader{
+    FontLoader
+    {
         id:argh
         source: "Aaargh.ttf"
+    }
+
+    Text
+    {
+        text: "John"
+        color:"white"
+        font: argh.name
+
+    }
+
+    width: 130
+    height: 130
+    color:"blue"
+    border.color: "black"
+    opacity: 0.5
+    MouseArea
+    {
+        anchors.fill: parent
+        drag.target: parent
+
+
     }
 }
 
