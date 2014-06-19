@@ -1,14 +1,54 @@
 import QtQuick 2.1
 import QtQuick.Window 2.1
+import "Scaling.js" as Skel
 
 Window
 {
+    id: wdw
     visible: true
+<<<<<<< HEAD
     width:432
     height:768
 
     //width:500
     //height:500
+=======
+    width:500
+    height:500
+<<<<<<< HEAD
+    color:"red"
+
+    Rectangle
+    {
+        id: erect
+        x:Skel.scaleX(wdw,10)
+        y:Skel.scaleY(wdw,10)
+
+        width: 163
+        height: 130
+        color:"green"
+
+        //Drag.target: parent
+
+        //Drag:parent
+        ////        Text
+        ////        {
+        ////            text:"Johhhnn"
+        ////            font: argh.name
+        ////        }
+
+        ////        FontLoader{
+        ////            id:argh
+        ////            source: "Aaargh.ttf"
+        ////        }
+
+
+        MouseArea
+        {
+            anchors.fill: parent
+            drag.target: parent
+=======
+>>>>>>> b759fccb703d1e7eec76db0db270d7874c730fa9
     color:"black"
 
     /*
@@ -41,6 +81,7 @@ Window
         }
     }
 
+<<<<<<< HEAD
     Image {
         id: bkgImage2
         height: parent.height
@@ -63,6 +104,11 @@ Window
             to: 0
             duration: 1000
         }
+=======
+    DigitalClock
+    {
+>>>>>>> e40ff237ce6d62c20ff38e6caaf371b4be916ece
+>>>>>>> b759fccb703d1e7eec76db0db270d7874c730fa9
 
     }
 
