@@ -2,5 +2,8 @@
     <qresource prefix="/">
         <file>main.qml</file>
         <file>DigitalClock.qml</file>
+        <file>Aaargh.ttf</file>
+        <file>MetroMenu.qml</file>
+        <file>mbuh.qml</file>
     </qresource>
 </RCC>
