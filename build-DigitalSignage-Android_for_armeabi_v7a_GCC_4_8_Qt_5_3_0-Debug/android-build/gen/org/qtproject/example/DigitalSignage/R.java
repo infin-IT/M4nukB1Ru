@@ -9,7 +9,11 @@ package org.qtproject.example.DigitalSignage;
 
 public final class R {
     public static final class array {
+        /**  %%INSERT_BUNDLED_IN_ASSETS%% 
+         */
         public static final int bundled_in_assets=0x7f030004;
+        /**  %%INSERT_BUNDLED_IN_LIB%% 
+         */
         public static final int bundled_in_lib=0x7f030003;
         /**  The following is handled automatically by the deployment tool. It should
          not be edited manually. 

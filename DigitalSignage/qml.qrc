@@ -2,5 +2,7 @@
     <qresource prefix="/">
         <file>main.qml</file>
         <file>DigitalClock.qml</file>
+        <file>Timeline.qml</file>
+        <file>Scaling.js</file>
     </qresource>
 </RCC>
