@@ -6,39 +6,19 @@ Window
     visible: true
     width:500
     height:500
-    color:"yellow"
+    color:"black"
 
-
-    Rectangle
+    Image
     {
-
-        width: 163
-        height: 130
-        color:"blue"
-
-        //Drag.target: parent
-
-        //Drag:parent
-        ////        Text
-        ////        {
-        ////            text:"Johhhnn"
-        ////            font: argh.name
-        ////        }
-
-        ////        FontLoader{
-        ////            id:argh
-        ////            source: "Aaargh.ttf"
-        ////        }
-
-
-        MouseArea
-        {
-            anchors.fill: parent
-            drag.target: parent
-
-        }
+        z:-1
+        anchors.fill: parent
+        source: "http://192.168.1.123/images/landscape.jpg"
     }
 
+    DigitalClock
+    {
+
+    }
 
 
 }
