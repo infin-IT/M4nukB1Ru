@@ -2,25 +2,18 @@
     <qresource prefix="/">
         <file>main.qml</file>
         <file>DigitalClock.qml</file>
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
+
         <file>timeline.qml</file>
         <file>Scaling.js</file>
         <file>ww.qml</file>
-=======
-<<<<<<< HEAD
->>>>>>> 3718b097f6eca1165d00f1b7c72b007291834b48
+
         <file>Aaargh.ttf</file>
         <file>MetroMenu.qml</file>
         <file>Timeline.qml</file>
         <file>Scaling.js</file>
-<<<<<<< HEAD
+
         <file>Positioning.js</file>
         <file>WeatherTime.ttf</file>
-=======
->>>>>>> b759fccb703d1e7eec76db0db270d7874c730fa9
->>>>>>> eea1ffe0eb2b32bd25eac0bf3b0c8855caddbbc0
->>>>>>> 3718b097f6eca1165d00f1b7c72b007291834b48
+
     </qresource>
 </RCC>
