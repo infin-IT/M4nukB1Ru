@@ -1,65 +1,57 @@
 import QtQuick 2.0
-
-
-Flickable
+import "Scaling.js" as Scales
+import "Positioning.js" as Pos
+Rectangle
 {
-    id: flickable1
-    anchors.right: parent.right
-    anchors.rightMargin: 0
-    anchors.left: parent.left
-    anchors.leftMargin: 0
-    anchors.bottom: parent.bottom
-    anchors.bottomMargin: 0
-    anchors.top: parent.top
-    anchors.topMargin: 0
-    boundsBehavior: Flickable.StopAtBounds
-    flickableDirection: Flickable.HorizontalFlick
-    clip : true
-    contentWidth: parent.width
+    property int space: 100
+    id: containerMaster
+    anchors.fill:parent
+    color:"transparent"
 
+    /*
+        Layout:
+
+        [Digital Clock] 0
+         __________________
+        |                  | 1
+        |    News Feed     |
+        |__________________|
+         ______  __________
+      2 |      || Timeline | 3
+        | MAP  ||          |
+        |______||          |
+         ______ |          |
+      4 |      ||__________|
+        |SIASAT| __________
+        |______|| About    | 5
+                |__________|
+    */
+
+    //CONTAINER 0
     Rectangle
     {
-        id:abang
-        color:"red"
+        id:container0
         x:0
-        width:100
-        height:100
+        y:0
+        width: parent.width
+        height: Scales.scaleY(containerMaster,20)
+        color:"transparent"
+        DigitalClock
+        {
+
+        }
     }
 
     Rectangle
     {
-        id:biru
-        color:"blue"
-        x:abang.width
-        width:200
-        height:100
-    }
-
-    Rectangle
-    {
-        id:ijo
+        id:container1
+        y:Pos.bottomOf(container0,0)
+        width: Scales.scaleX(parent,30)
+        height: width
         color:"green"
-        x:abang.width+biru.width
-        width:300
-        height:100
+        border.color: "black"
+        opacity: 0.5
     }
 
-    Rectangle
-    {
-        id:kuning
-        color:"yellow"
-        x:abang.width+biru.width+ijo.width
-        width:300
-        height:parent.height
-    }
-
-    Rectangle
-    {
-        id:ireng
-        color:"black"
-        x:abang.width+biru.width+ijo.width+kuning.width
-        width:300
-        height:parent.height
-    }
 }
 

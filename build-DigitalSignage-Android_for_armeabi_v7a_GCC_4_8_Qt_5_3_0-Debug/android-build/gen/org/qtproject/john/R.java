@@ -5,7 +5,7 @@
  * should not be modified by hand.
  */
 
-package org.qtproject.example.DigitalSignage;
+package org.qtproject.john;
 
 public final class R {
     public static final class array {

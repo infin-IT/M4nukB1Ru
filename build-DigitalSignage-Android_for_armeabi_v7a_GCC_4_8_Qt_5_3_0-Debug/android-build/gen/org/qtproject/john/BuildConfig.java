@@ -1,5 +1,5 @@
 /** Automatically generated file. DO NOT MODIFY */
-package org.qtproject.example.DigitalSignage;
+package org.qtproject.john;
 
 public final class BuildConfig {
     public final static boolean DEBUG = true;

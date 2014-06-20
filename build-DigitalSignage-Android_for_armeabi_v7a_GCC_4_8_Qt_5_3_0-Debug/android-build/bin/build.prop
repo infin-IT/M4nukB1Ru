@@ -1,13 +1,5 @@
 #Last build type
-<<<<<<< HEAD
-#Thu, 19 Jun 2014 11:41:56 +0700
-=======
-<<<<<<< HEAD
-#Thu, 19 Jun 2014 09:47:20 +0700
-=======
-#Tue, 17 Jun 2014 18:50:42 +0700
->>>>>>> e40ff237ce6d62c20ff38e6caaf371b4be916ece
->>>>>>> b759fccb703d1e7eec76db0db270d7874c730fa9
+#Thu, 19 Jun 2014 17:28:39 +0700
 
 build.last.target=debug
 
