@@ -10,6 +10,64 @@ Window
     width:432
     height:768
 
+<<<<<<< HEAD
+=======
+    //width:500
+    //height:500
+=======
+    width:500
+    height:500
+    color:"red"
+
+    Rectangle
+    {
+        id: erect
+        x:Skel.scaleX(wdw,10)
+        y:Skel.scaleY(wdw,10)
+
+        width: 163
+        height: 130
+        color:"green"
+
+        //Drag.target: parent
+
+        //Drag:parent
+        ////        Text
+        ////        {
+        ////            text:"Johhhnn"
+        ////            font: argh.name
+        ////        }
+
+        ////        FontLoader{
+        ////            id:argh
+        ////            source: "Aaargh.ttf"
+        ////        }
+
+
+        MouseArea
+        {
+            anchors.fill: parent
+            drag.target: parent
+<<<<<<< HEAD
+
+            Image
+            {
+                z:-1
+                anchors.fill: parent
+                source: "http://192.168.1.123/images/landscape.jpg"
+            }
+
+            DigitalClock
+            {
+
+
+            }
+=======
+=======
+>>>>>>> b759fccb703d1e7eec76db0db270d7874c730fa9
+    color:"black"
+
+>>>>>>> 3718b097f6eca1165d00f1b7c72b007291834b48
     /*
         Background Image :
         bkgImage1 - Transition Image Temporary 1
@@ -120,6 +178,9 @@ Window
     }
 
 
+>>>>>>> eea1ffe0eb2b32bd25eac0bf3b0c8855caddbbc0
 
+        }
+    }
 }
 
