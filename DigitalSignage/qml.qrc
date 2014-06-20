@@ -5,9 +5,9 @@
         <file>MetroMenu.qml</file>
         <file>Timeline.qml</file>
         <file>Scaling.js</file>
-	  <file>Positioning.js</file>
+        <file>Positioning.js</file>
         <file>Aaargh.ttf</file>
         <file>WeatherTime.ttf</file>
-        
+        <file>AgendaViewer.qml</file>
     </qresource>
 </RCC>
