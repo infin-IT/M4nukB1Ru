@@ -10,36 +10,10 @@ Window
     width:432
     height:768
 
-    width:500
-    height:500
-    color:"red"
-
-    Rectangle
-    {
-        id: erect
-        x:Skel.scaleX(wdw,10)
-        y:Skel.scaleY(wdw,10)
-
-        width: 163
-        height: 130
-        color:"green"
-
-        //Drag.target: parent
-
-        //Drag:parent
-        ////        Text
-        ////        {
-        ////            text:"Johhhnn"
-        ////            font: argh.name
-        ////        }
-
-        ////        FontLoader{
-        ////            id:argh
-        ////            source: "Aaargh.ttf"
-        ////        }
+    color:"black"
 
 
-        /*
+    /*
         Background Image :
         bkgImage1 - Transition Image Temporary 1
         bkgImage2 - Transition Image Temporary 2
@@ -148,7 +122,6 @@ Window
             }
         }
 
-    }
 }
 
 
