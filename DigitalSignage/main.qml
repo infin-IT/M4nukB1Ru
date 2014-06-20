@@ -6,7 +6,8 @@ Window
 {
     id: wdw
     visible: true
-    property variant imagePath: ["http://192.168.1.123/images/landscape.jpg","http://192.168.1.123/images/landscape2.jpg","http://192.168.1.123/images/landscape3.jpg",,"http://192.168.1.123/images/landscape4.jpg"]
+    property variant imagePath: ["landscape.jpg","landscape2.jpg","landscape3.jpg","landscape4.jpg"]
+    property int ctrBackground: 1
     width:432
     height:768
 
@@ -23,6 +24,7 @@ Window
             id:bkgImage1
             height: parent.height
             width: bkgImage1.sourceSize.width * parent.height/bkgImage1.sourceSize.height
+            anchors.horizontalCenter: parent.horizontalCenter
             x:0
             source: imagePath[0]
 
@@ -47,6 +49,7 @@ Window
             id: bkgImage2
             height: parent.height
             width: bkgImage1.sourceSize.width * parent.height/bkgImage1.sourceSize.height
+            anchors.horizontalCenter: parent.horizontalCenter
             x:0
             source: imagePath[1]
 
@@ -70,11 +73,11 @@ Window
 
 
 
-        /*
+      /*
         Rectangle Container
         for
         Metro Menu
-    */
+      */
         Rectangle {
             id: rectangle1
             color: "transparent"
@@ -105,6 +108,9 @@ Window
             running: true
             onTriggered:
             {
+                ctrBackground++
+                console.debug(ctrBackground)
+                if (ctrBackground>imagePath.length-1) ctrBackground=0
                 if (bkgImage1.opacity===1 && bkgImage2.opacity===1)
                 {
                     image1out.start()
@@ -113,11 +119,13 @@ Window
                 {
                     image1in.start()
                     image2out.start()
+                    bkgImage1.source=imagePath[ctrBackground]
                 }
                 else
                 {
                     image1out.start()
                     image2in.start()
+                    bkgImage2.source=imagePath[ctrBackground]
                 }
             }
         }

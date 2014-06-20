@@ -11,7 +11,7 @@ Rectangle
     /*
         Layout:
 
-        [Digital Clock] 0
+     [Digital Clock]+[Weather]
          __________________
         |                  | 1
         |    News Feed     |
@@ -36,10 +36,31 @@ Rectangle
         width: parent.width
         height: Scales.scaleY(containerMaster,20)
         color:"transparent"
-        DigitalClock
-        {
 
+        //CONTAINER DIGITAL CLOCK
+        Rectangle
+        {
+            id:containerDC
+            x:0
+            y:0
+            width:Scales.scaleX(parent,70)
+            height: parent.height
+            color:"transparent"
+            DigitalClock{}
         }
+
+        //CONTAINER WEATHER
+        Rectangle
+        {
+            id:containerW
+            width:Scales.scaleX(parent,30)
+            height: parent.height
+            x:Pos.rightOf(containerDC,0)
+            y:0
+            color:"transparent"
+            Weather{}
+        }
+
     }
 
     Rectangle
@@ -51,7 +72,21 @@ Rectangle
         color:"green"
         border.color: "black"
         opacity: 0.5
+
+        MouseArea
+        {
+            anchors.fill:parent
+            onClicked:
+            {
+                load1.source= "Timeline.qml"
+            }
+        }
     }
 
+    Loader
+    {
+        id:load1
+        anchors.fill:parent
+    }
 }
 
