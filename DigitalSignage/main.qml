@@ -1,55 +1,14 @@
 import QtQuick 2.1
 import QtQuick.Window 2.1
-import "Scaling.js" as Skel
+import "Scaling.js" as Scales
 
 Window
 {
     id: wdw
     visible: true
-<<<<<<< HEAD
+    property variant imagePath: ["http://192.168.1.123/images/landscape.jpg","http://192.168.1.123/images/landscape2.jpg","http://192.168.1.123/images/landscape3.jpg",,"http://192.168.1.123/images/landscape4.jpg"]
     width:432
     height:768
-
-    //width:500
-    //height:500
-=======
-    width:500
-    height:500
-<<<<<<< HEAD
-    color:"red"
-
-    Rectangle
-    {
-        id: erect
-        x:Skel.scaleX(wdw,10)
-        y:Skel.scaleY(wdw,10)
-
-        width: 163
-        height: 130
-        color:"green"
-
-        //Drag.target: parent
-
-        //Drag:parent
-        ////        Text
-        ////        {
-        ////            text:"Johhhnn"
-        ////            font: argh.name
-        ////        }
-
-        ////        FontLoader{
-        ////            id:argh
-        ////            source: "Aaargh.ttf"
-        ////        }
-
-
-        MouseArea
-        {
-            anchors.fill: parent
-            drag.target: parent
-=======
->>>>>>> b759fccb703d1e7eec76db0db270d7874c730fa9
-    color:"black"
 
     /*
         Background Image :
@@ -62,7 +21,7 @@ Window
         height: parent.height
         width: bkgImage1.sourceSize.width * parent.height/bkgImage1.sourceSize.height
         x:0
-        source: "http://192.168.1.123/images/landscape.jpg"
+        source: imagePath[0]
 
         NumberAnimation on opacity
         {
@@ -81,13 +40,12 @@ Window
         }
     }
 
-<<<<<<< HEAD
     Image {
         id: bkgImage2
         height: parent.height
         width: bkgImage1.sourceSize.width * parent.height/bkgImage1.sourceSize.height
         x:0
-        source: "http://192.168.1.123/images/landscape2.jpg"
+        source: imagePath[1]
 
         NumberAnimation on opacity
         {
@@ -104,13 +62,10 @@ Window
             to: 0
             duration: 1000
         }
-=======
-    DigitalClock
-    {
->>>>>>> e40ff237ce6d62c20ff38e6caaf371b4be916ece
->>>>>>> b759fccb703d1e7eec76db0db270d7874c730fa9
 
     }
+
+
 
     /*
         Rectangle Container
@@ -119,21 +74,20 @@ Window
     */
     Rectangle {
         id: rectangle1
-        color: "red"
-        opacity:0.3
+        color: "transparent"
         anchors.right: parent.right
-        anchors.rightMargin: 20
+        anchors.rightMargin: Scales.scaleX(wdw,5)
         anchors.left: parent.left
-        anchors.leftMargin: 20
+        anchors.leftMargin: Scales.scaleX(wdw,5)
         anchors.bottom: parent.bottom
-        anchors.bottomMargin: 20
+        anchors.bottomMargin: Scales.scaleX(wdw,5)
         anchors.top: parent.top
-        anchors.topMargin: 20
-
+        anchors.topMargin: Scales.scaleX(wdw,5)
         MetroMenu
         {
 
         }
+
     }
 
     /*
@@ -141,30 +95,31 @@ Window
 
         WARNING: Not supported in QT Design
     */
-    //    Timer
-    //    {
-    //        interval: 10000
-    //        repeat: true
-    //        running: true
-    //        onTriggered:
-    //        {
-    //           if (bkgImage1.opacity===1 && bkgImage2.opacity===1)
-    //           {
-    //               image1out.start()
-    //           }
-    //           if (bkgImage2.opacity===1) //gbr2 didepan
-    //           {
-    //               image1in.start()
-    //               image2out.start()
-    //           }
-    //           else
-    //           {
-    //               image1out.start()
-    //               image2in.start()
-    //           }
-    //        }
-    //    }
+    Timer
+    {
+        interval: 10000
+        repeat: true
+        running: true
+        onTriggered:
+        {
+            if (bkgImage1.opacity===1 && bkgImage2.opacity===1)
+            {
+                image1out.start()
+            }
+            if (bkgImage2.opacity===1) //gbr2 didepan
+            {
+                image1in.start()
+                image2out.start()
+            }
+            else
+            {
+                image1out.start()
+                image2in.start()
+            }
+        }
+    }
 
 
 
 }
+

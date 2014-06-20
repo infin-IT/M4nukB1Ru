@@ -2,13 +2,11 @@
     <qresource prefix="/">
         <file>main.qml</file>
         <file>DigitalClock.qml</file>
-<<<<<<< HEAD
         <file>Aaargh.ttf</file>
         <file>MetroMenu.qml</file>
-        <file>mbuh.qml</file>
-=======
         <file>Timeline.qml</file>
         <file>Scaling.js</file>
->>>>>>> b759fccb703d1e7eec76db0db270d7874c730fa9
+        <file>Positioning.js</file>
+        <file>WeatherTime.ttf</file>
     </qresource>
 </RCC>
