@@ -16,5 +16,7 @@
         <file>bubble_left.png</file>
         <file>bubble_right.png</file>
         <file>timelineWindow.png</file>
+        <file>AgendaViewer.qml</file>
+        <file>loading.gif</file>
     </qresource>
 </RCC>
