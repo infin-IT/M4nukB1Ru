@@ -23,7 +23,7 @@ Rectangle
          ______ |          |
       4 |      ||__________|
         |SIASAT| __________
-        |______|| About    | 5
+        |______||    CC    | 5
                 |__________|
     */
 
@@ -190,7 +190,7 @@ Rectangle
         y:Pos.bottomOf(container3,10)
         x:Pos.rightOf(container2,10)
         width: Scales.scaleX(parent,50)
-        height: Scales.scaleY(parent,20)
+        height: Scales.scaleY(parent,25)
         color:"Black"
         border.color: "black"
         opacity: 0.5
@@ -198,7 +198,7 @@ Rectangle
         Text
         {
             anchors.centerIn: parent
-            text:"About"
+            text:"Campus Care"
             font.pixelSize: 50
             color:"black"
         }
