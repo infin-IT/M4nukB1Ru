@@ -10,12 +10,14 @@ Rectangle {
     signal isFadeOut()
     property string webAddress
     opacity: 0
+
     Rectangle
     {
         anchors.fill:parent
         color:"black"
         opacity:0.5
     }
+
     Rectangle
     {
         id: rectangle1

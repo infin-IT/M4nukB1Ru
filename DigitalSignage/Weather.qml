@@ -7,6 +7,8 @@ Rectangle {
     id:containerMaster
     anchors.fill:parent
     color:"transparent"
+    property string path: "http://192.168.0.102/DigitalSignage/Weather/"
+
     property string kota
     property string suhu
     property string condition
@@ -16,13 +18,13 @@ Rectangle {
     FontLoader
     {
         id:weatherFont
-        source: "WeatherTime.ttf"
+        source: path+"fonts/WeatherTime.ttf"
     }
 
     FontLoader
     {
         id:argh
-        source: "Aaargh.ttf"
+        source: path+"fonts/Aaargh.ttf"
     }
 
     //Condition (Shadow)
