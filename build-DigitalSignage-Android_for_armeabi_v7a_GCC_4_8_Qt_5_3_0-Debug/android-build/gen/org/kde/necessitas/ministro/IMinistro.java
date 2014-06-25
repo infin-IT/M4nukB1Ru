@@ -1,6 +1,6 @@
 /*
  * This file is auto-generated.  DO NOT MODIFY.
- * Original file: C:\\Users\\io7\\Documents\\M4nukB1Ru\\build-DigitalSignage-Android_for_armeabi_v7a_GCC_4_8_Qt_5_3_0-Debug\\android-build\\src\\org\\kde\\necessitas\\ministro\\IMinistro.aidl
+ * Original file: /home/yahya/M4nukB1Ru/build-DigitalSignage-Android_for_armeabi_v7a_GCC_4_8_Qt_5_3_0-Debug/android-build/src/org/kde/necessitas/ministro/IMinistro.aidl
  */
 package org.kde.necessitas.ministro;
 public interface IMinistro extends android.os.IInterface

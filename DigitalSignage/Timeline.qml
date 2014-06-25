@@ -3,7 +3,7 @@ import QtQuick.Window 2.1
 import "Scaling.js" as S
 import QtQuick.XmlListModel 2.0
 
-Window
+Rectangle
 {
     property int n;
     id:tlW

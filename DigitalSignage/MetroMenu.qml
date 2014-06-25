@@ -63,15 +63,145 @@ Rectangle
 
     }
 
+    //CONTAINER 1
     Rectangle
     {
         id:container1
         y:Pos.bottomOf(container0,0)
-        width: Scales.scaleX(parent,30)
+        anchors.left:parent.left
+        anchors.leftMargin: 0
+        anchors.right: parent.right
+        anchors.rightMargin: 0
+        height: Scales.scaleY(parent,20)
+        color:"Red"
+        border.color: "black"
+        opacity: 0.5
+
+        Text
+        {
+            anchors.centerIn: parent
+            text:"Timeline"
+            font.pixelSize:50
+            color:"black"
+        }
+
+        MouseArea
+        {
+            anchors.fill:parent
+            onClicked:
+            {
+                load1.source= "Timeline.qml"
+            }
+        }
+    }
+
+    //CONTAINER 2
+    Rectangle
+    {
+        id:container2
+        y:Pos.bottomOf(container1,10)
+        width: Scales.scaleX(parent,50)-10
         height: width
         color:"green"
         border.color: "black"
         opacity: 0.5
+
+        Text
+        {
+            anchors.centerIn: parent
+            text:"Map"
+            font.pixelSize: 50
+            color:"black"
+        }
+
+        MouseArea
+        {
+            anchors.fill:parent
+            onClicked:
+            {
+                load1.source= "Timeline.qml"
+            }
+        }
+    }
+
+    //CONTAINER 3
+    Rectangle
+    {
+        id:container3
+        y:Pos.bottomOf(container1,10)
+        x:Pos.rightOf(container2,10)
+        width: Scales.scaleX(parent,50)
+        height: Scales.scaleY(parent,33)-10
+        color:"Blue"
+        border.color: "black"
+        opacity: 0.5
+
+        Text
+        {
+            anchors.centerIn: parent
+            text:"News Feed"
+            font.pixelSize: 50
+            color:"black"
+        }
+
+        MouseArea
+        {
+            anchors.fill:parent
+            onClicked:
+            {
+                load1.source= "Timeline.qml"
+            }
+        }
+    }
+
+    //CONTAINER 4
+    Rectangle
+    {
+        id:container4
+        y:Pos.bottomOf(container2,10)
+        width: Scales.scaleX(parent,50)-10
+        height: width
+        color:"Yellow"
+        border.color: "black"
+        opacity: 0.5
+
+        Text
+        {
+            anchors.centerIn: parent
+            text:"SIASAT"
+            font.pixelSize: 50
+            color:"black"
+        }
+
+        MouseArea
+        {
+            anchors.fill:parent
+            onClicked:
+            {
+                load1.source= "Timeline.qml"
+            }
+        }
+    }
+
+    //CONTAINER 5
+    Rectangle
+    {
+        id:container5
+        y:Pos.bottomOf(container3,10)
+        x:Pos.rightOf(container2,10)
+        width: Scales.scaleX(parent,50)
+        height: Scales.scaleY(parent,20)
+        color:"Black"
+        border.color: "black"
+        opacity: 0.5
+
+        Text
+        {
+            anchors.centerIn: parent
+            text:"About"
+            font.pixelSize: 50
+            color:"black"
+        }
 
         MouseArea
         {
