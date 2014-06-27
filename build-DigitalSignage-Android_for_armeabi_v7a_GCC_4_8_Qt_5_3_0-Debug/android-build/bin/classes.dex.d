@@ -1,10 +1,10 @@
 /home/yahya/M4nukB1Ru/build-DigitalSignage-Android_for_armeabi_v7a_GCC_4_8_Qt_5_3_0-Debug/android-build/bin/classes.dex : \
-/home/yahya/M4nukB1Ru/build-DigitalSignage-Android_for_armeabi_v7a_GCC_4_8_Qt_5_3_0-Debug/android-build/bin/classes/org/qtproject/john/R$string.class \
-/home/yahya/M4nukB1Ru/build-DigitalSignage-Android_for_armeabi_v7a_GCC_4_8_Qt_5_3_0-Debug/android-build/bin/classes/org/qtproject/john/R$attr.class \
-/home/yahya/M4nukB1Ru/build-DigitalSignage-Android_for_armeabi_v7a_GCC_4_8_Qt_5_3_0-Debug/android-build/bin/classes/org/qtproject/john/R$array.class \
-/home/yahya/M4nukB1Ru/build-DigitalSignage-Android_for_armeabi_v7a_GCC_4_8_Qt_5_3_0-Debug/android-build/bin/classes/org/qtproject/john/BuildConfig.class \
-/home/yahya/M4nukB1Ru/build-DigitalSignage-Android_for_armeabi_v7a_GCC_4_8_Qt_5_3_0-Debug/android-build/bin/classes/org/qtproject/john/R.class \
-/home/yahya/M4nukB1Ru/build-DigitalSignage-Android_for_armeabi_v7a_GCC_4_8_Qt_5_3_0-Debug/android-build/bin/classes/org/qtproject/john/R$layout.class \
+/home/yahya/M4nukB1Ru/build-DigitalSignage-Android_for_armeabi_v7a_GCC_4_8_Qt_5_3_0-Debug/android-build/bin/classes/org/qtproject/john2/R$string.class \
+/home/yahya/M4nukB1Ru/build-DigitalSignage-Android_for_armeabi_v7a_GCC_4_8_Qt_5_3_0-Debug/android-build/bin/classes/org/qtproject/john2/R$attr.class \
+/home/yahya/M4nukB1Ru/build-DigitalSignage-Android_for_armeabi_v7a_GCC_4_8_Qt_5_3_0-Debug/android-build/bin/classes/org/qtproject/john2/R$array.class \
+/home/yahya/M4nukB1Ru/build-DigitalSignage-Android_for_armeabi_v7a_GCC_4_8_Qt_5_3_0-Debug/android-build/bin/classes/org/qtproject/john2/BuildConfig.class \
+/home/yahya/M4nukB1Ru/build-DigitalSignage-Android_for_armeabi_v7a_GCC_4_8_Qt_5_3_0-Debug/android-build/bin/classes/org/qtproject/john2/R.class \
+/home/yahya/M4nukB1Ru/build-DigitalSignage-Android_for_armeabi_v7a_GCC_4_8_Qt_5_3_0-Debug/android-build/bin/classes/org/qtproject/john2/R$layout.class \
 /home/yahya/M4nukB1Ru/build-DigitalSignage-Android_for_armeabi_v7a_GCC_4_8_Qt_5_3_0-Debug/android-build/bin/classes/org/qtproject/qt5/android/bindings/QtActivity$3$1.class \
 /home/yahya/M4nukB1Ru/build-DigitalSignage-Android_for_armeabi_v7a_GCC_4_8_Qt_5_3_0-Debug/android-build/bin/classes/org/qtproject/qt5/android/bindings/QtActivity.class \
 /home/yahya/M4nukB1Ru/build-DigitalSignage-Android_for_armeabi_v7a_GCC_4_8_Qt_5_3_0-Debug/android-build/bin/classes/org/qtproject/qt5/android/bindings/QtActivity$6.class \

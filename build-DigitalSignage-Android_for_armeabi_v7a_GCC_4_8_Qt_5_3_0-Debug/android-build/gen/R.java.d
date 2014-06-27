@@ -1,4 +1,4 @@
-/home/yahya/M4nukB1Ru/build-DigitalSignage-Android_for_armeabi_v7a_GCC_4_8_Qt_5_3_0-Debug/android-build/gen/org/qtproject/john/R.java \
+/home/yahya/M4nukB1Ru/build-DigitalSignage-Android_for_armeabi_v7a_GCC_4_8_Qt_5_3_0-Debug/android-build/gen/org/qtproject/john2/R.java \
  : /home/yahya/M4nukB1Ru/build-DigitalSignage-Android_for_armeabi_v7a_GCC_4_8_Qt_5_3_0-Debug/android-build/res/values-el/strings.xml \
 /home/yahya/M4nukB1Ru/build-DigitalSignage-Android_for_armeabi_v7a_GCC_4_8_Qt_5_3_0-Debug/android-build/res/values-fr/strings.xml \
 /home/yahya/M4nukB1Ru/build-DigitalSignage-Android_for_armeabi_v7a_GCC_4_8_Qt_5_3_0-Debug/android-build/res/values/strings.xml \

@@ -1,31 +1,58 @@
 import QtQuick 2.0
 import "Scaling.js" as Scales
 import "Positioning.js" as Pos
+
 Rectangle
 {
     property int space: 100
     id: containerMaster
-    anchors.fill:parent
+
+    anchors.right: parent.right
+    anchors.rightMargin: Scales.scaleX(parent,5)
+    anchors.left: parent.left
+    anchors.leftMargin: Scales.scaleX(parent,5)
+    anchors.bottom: parent.bottom
+    anchors.bottomMargin: Scales.scaleX(parent,5)
+    anchors.top: parent.top
+    anchors.topMargin: Scales.scaleX(parent,5)
+
     color:"transparent"
+    property string path: "http://192.168.0.102/DigitalSignage/MetroMenu/"
+    property string icon_path: "images/icon/"
+
+    //Setting Fonts
+    property string metrofont_color:"white"
+    property string metrofont_font: segoeUI.name
+    property string metrofont_size_h1:Scales.scaleY(parent,3)
+    property string metrofont_size_p:Scales.scaleY(parent,1)
+
+    FontLoader
+    {
+        source: path+"fonts/segoeui.ttf"
+        id:segoeUI
+    }
+
+
+    signal toTimeline()
 
     /*
-        Layout:
+            Layout:
 
-     [Digital Clock]+[Weather]
-         __________________
-        |                  | 1
-        |    News Feed     |
-        |__________________|
-         ______  __________
-      2 |      || Timeline | 3
-        | MAP  ||          |
-        |______||          |
-         ______ |          |
-      4 |      ||__________|
-        |SIASAT| __________
-        |______||    CC    | 5
-                |__________|
-    */
+         [Digital Clock]+[Weather]
+             __________________
+            |                  | 1
+            |    News Feed     |
+            |__________________|
+             ______  __________
+          2 |      || Timeline | 3
+            | MAP  ||          |
+            |______||          |
+             ______ |          |
+          4 |      ||__________|
+            |SIASAT| __________
+            |______||    CC    | 5
+                    |__________|
+        */
 
     //CONTAINER 0
     Rectangle
@@ -73,16 +100,18 @@ Rectangle
         anchors.right: parent.right
         anchors.rightMargin: 0
         height: Scales.scaleY(parent,20)
-        color:"Red"
-        border.color: "black"
-        opacity: 0.5
+        color:"#603cba"
+        antialiasing: true
+        //border.color: "white"
+        opacity: 1
 
         Text
         {
             anchors.centerIn: parent
-            text:"Timeline"
-            font.pixelSize:50
-            color:"black"
+            text:"News Feed"
+            font.pixelSize:metrofont_size_h1
+            font.family: metrofont_font
+            color:metrofont_color
         }
 
         MouseArea
@@ -102,17 +131,34 @@ Rectangle
         y:Pos.bottomOf(container1,10)
         width: Scales.scaleX(parent,50)-10
         height: width
-        color:"green"
-        border.color: "black"
-        opacity: 0.5
+        color:"#b91d47"
+        antialiasing: true
+        //border.color: "black"
+        opacity: 1
+
+
 
         Text
         {
-            anchors.centerIn: parent
+            id:txtTitleContainer2
+            anchors.horizontalCenter: parent.horizontalCenter
+            y:Scales.scaleY(parent,60)
             text:"Map"
-            font.pixelSize: 50
-            color:"black"
+            font.pixelSize: metrofont_size_h1
+            color:metrofont_color
+            font.family: metrofont_font
         }
+
+        Image
+        {
+            antialiasing: true
+            anchors.horizontalCenter: parent.horizontalCenter
+            y:Pos.topOf(txtTitleContainer2,height)
+            source:path+icon_path+"map.png"
+            width:Scales.scaleX(parent,40)
+            height:width
+        }
+
 
         MouseArea
         {
@@ -132,16 +178,18 @@ Rectangle
         x:Pos.rightOf(container2,10)
         width: Scales.scaleX(parent,50)
         height: Scales.scaleY(parent,33)-10
-        color:"Blue"
-        border.color: "black"
-        opacity: 0.5
+        color:"#00a300"
+        antialiasing: true
+        //border.color: "black"
+        opacity: 1
 
         Text
         {
             anchors.centerIn: parent
-            text:"News Feed"
-            font.pixelSize: 50
-            color:"black"
+            text:"Timeline"
+            font.pixelSize: metrofont_size_h1
+            color:metrofont_color
+            font.family: metrofont_font
         }
 
         MouseArea
@@ -149,7 +197,7 @@ Rectangle
             anchors.fill:parent
             onClicked:
             {
-                load1.source= "Timeline.qml"
+                toTimeline()
             }
         }
     }
@@ -161,16 +209,18 @@ Rectangle
         y:Pos.bottomOf(container2,10)
         width: Scales.scaleX(parent,50)-10
         height: width
-        color:"Yellow"
-        border.color: "black"
-        opacity: 0.5
+        color:"#00aba9"
+        antialiasing: true
+        //border.color: "black"
+        opacity: 1
 
         Text
         {
             anchors.centerIn: parent
             text:"SIASAT"
-            font.pixelSize: 50
-            color:"black"
+            font.pixelSize: metrofont_size_h1
+            color:metrofont_color
+            font.family: metrofont_font
         }
 
         MouseArea
@@ -190,17 +240,19 @@ Rectangle
         y:Pos.bottomOf(container3,10)
         x:Pos.rightOf(container2,10)
         width: Scales.scaleX(parent,50)
-        height: Scales.scaleY(parent,25)
-        color:"Black"
-        border.color: "black"
-        opacity: 0.5
+        height: Scales.scaleY(parent,22)
+        color:"#2d89ef"
+        antialiasing: true
+        //border.color: "black"
+        opacity: 1
 
         Text
         {
             anchors.centerIn: parent
             text:"Campus Care"
-            font.pixelSize: 50
-            color:"black"
+            font.pixelSize: metrofont_size_h1
+            font.family: metrofont_font
+            color:metrofont_color
         }
 
         MouseArea
@@ -213,10 +265,8 @@ Rectangle
         }
     }
 
-    Loader
-    {
-        id:load1
-        anchors.fill:parent
-    }
 }
+
+
+
 

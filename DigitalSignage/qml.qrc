@@ -8,6 +8,6 @@
         <file>Positioning.js</file>
         <file>Weather.qml</file>
         <file>AgendaViewer.qml</file>
-        <file>MainMenu.qml</file>
+        <file>BackgroundChanger.qml</file>
     </qresource>
 </RCC>

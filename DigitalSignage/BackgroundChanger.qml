@@ -1,19 +1,19 @@
-import QtQuick 2.1
-import QtQuick.Window 2.1
-import "Scaling.js" as Scales
+import QtQuick 2.0
 
-Rectangle
-{
-    id: wdw
-    visible: true
-    property string path: "http://192.168.0.102/DigitalSignage/MainMenu/"
+Rectangle {
+    z:-1
+    anchors.fill: parent
+
+    property string path: "http://192.168.0.102/DigitalSignage/BackgroundChanger/"
     property string bkgimg_path: "images/background/"
-    property variant imagePath: [path+bkgimg_path+"landscape.jpg",path+bkgimg_path+"landscape2.jpg",path+bkgimg_path+"landscape3.jpg",path+bkgimg_path+"landscape4.jpg"]
-    property int ctrBackground: 1
-    width:432
-    height:768
+    property variant imagePath: [path+bkgimg_path+"background1.jpg",
+                                 path+bkgimg_path+"background2.jpg",
+                                 path+bkgimg_path+"background3.jpg",
+                                 path+bkgimg_path+"background4.jpg",
+                                 path+bkgimg_path+"background5.jpg",
+                                 path+bkgimg_path+"background6.jpg"]
 
-    color:"black"
+    property int ctrBackground: 1
 
     /*
         Background Image :
@@ -72,36 +72,11 @@ Rectangle
 
         }
 
-
-
-      /*
-        Rectangle Container
-        for
-        Metro Menu
-      */
-        Rectangle {
-            id: rectangle1
-            color: "transparent"
-            anchors.right: parent.right
-            anchors.rightMargin: Scales.scaleX(wdw,5)
-            anchors.left: parent.left
-            anchors.leftMargin: Scales.scaleX(wdw,5)
-            anchors.bottom: parent.bottom
-            anchors.bottomMargin: Scales.scaleX(wdw,5)
-            anchors.top: parent.top
-            anchors.topMargin: Scales.scaleX(wdw,5)
-            MetroMenu
-            {
-
-            }
-
-        }
-
         /*
         Background Image Transition Timer
 
         WARNING: Not supported in QT Design
-    */
+        */
         Timer
         {
             interval: 10000
@@ -110,7 +85,7 @@ Rectangle
             onTriggered:
             {
                 ctrBackground++
-                console.debug(ctrBackground)
+                //console.debug(ctrBackground)
                 if (ctrBackground>imagePath.length-1) ctrBackground=0
                 if (bkgImage1.opacity===1 && bkgImage2.opacity===1)
                 {
@@ -132,5 +107,3 @@ Rectangle
         }
 
 }
-
-

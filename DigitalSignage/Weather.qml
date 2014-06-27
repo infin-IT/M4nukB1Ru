@@ -31,11 +31,11 @@ Rectangle {
     Text
     {
         id:txtConditionShd
-        x:Scales.scaleX(parent,5)+1
+        x:1
         y:Scales.scaleY(parent,10)+1
         color:"#888888"
         font.family: weatherFont.name
-        font.pixelSize: Scales.scaleY(containerMaster,60)
+        font.pixelSize: Scales.scaleY(containerMaster,70)
         text: txtCondition.text
     }
 
@@ -43,11 +43,11 @@ Rectangle {
     Text
     {
         id:txtCondition
-        x:Scales.scaleX(parent,5)
+        x:0
         y:Scales.scaleY(parent,10)
         color:"white"
         font.family: weatherFont.name
-        font.pixelSize: Scales.scaleY(containerMaster,60)
+        font.pixelSize: Scales.scaleY(containerMaster,70)
     }
 
     //Timer Weather
@@ -70,8 +70,8 @@ Rectangle {
     {
         id:txtTempIconShd
         color:"#888888"
-        x:Scales.scaleX(containerMaster,50)+1
-        y:Scales.scaleY(containerMaster,50)+1
+        x:Scales.scaleX(containerMaster,30)+1
+        y:Scales.scaleY(containerMaster,65)+1
         text:"k"
         font.family: weatherFont.name
         font.pixelSize: Scales.scaleY(containerMaster,25)
@@ -82,8 +82,8 @@ Rectangle {
     {
         id:txtTempIcon
         color:"white"
-        x:Scales.scaleX(containerMaster,50)
-        y:Scales.scaleY(containerMaster,50)
+        x:Scales.scaleX(containerMaster,30)
+        y:Scales.scaleY(containerMaster,65)
         text:"k"
         font.family: weatherFont.name
         font.pixelSize: Scales.scaleY(containerMaster,25)
@@ -94,8 +94,8 @@ Rectangle {
     {
         id:txtTempShd
         color:"#888888"
-        x:Scales.scaleX(containerMaster,70)+1
-        y:Scales.scaleY(containerMaster,44)+1
+        x:Scales.scaleX(containerMaster,50)+1
+        y:Scales.scaleY(containerMaster,59)+1
         text:txtTemp.text
         font.family: argh.name
         font.pixelSize: Scales.scaleY(containerMaster,25)
@@ -106,8 +106,8 @@ Rectangle {
     {
         id:txtTemp
         color:"white"
-        x:Scales.scaleX(containerMaster,70)
-        y:Scales.scaleY(containerMaster,44)
+        x:Scales.scaleX(containerMaster,50)
+        y:Scales.scaleY(containerMaster,59)
         font.family: argh.name
         font.pixelSize: Scales.scaleY(containerMaster,25)
     }
@@ -117,8 +117,8 @@ Rectangle {
     {
         id:txtCelcIconShd
         color:"#888888"
-        x:Scales.scaleX(containerMaster,92)+1
-        y:Scales.scaleY(containerMaster,50)+1
+        x:Scales.scaleX(containerMaster,75)+1
+        y:Scales.scaleY(containerMaster,65)+1
         text:"l"
         font.family: weatherFont.name
         font.pixelSize: Scales.scaleY(containerMaster,25)
@@ -129,8 +129,8 @@ Rectangle {
     {
         id:txtCelcIcon
         color:"white"
-        x:Scales.scaleX(containerMaster,92)
-        y:Scales.scaleY(containerMaster,50)
+        x:Scales.scaleX(containerMaster,75)
+        y:Scales.scaleY(containerMaster,65)
         text:"l"
         font.family: weatherFont.name
         font.pixelSize: Scales.scaleY(containerMaster,25)
@@ -139,7 +139,7 @@ Rectangle {
     XmlListModel {
         id: weatherModel
         source: "http://weather.yahooapis.com/forecastrss?w=1048262"
-        //source: "http://localhost/forecastrss.xml"
+        //source: "http://192.168.0.102/DigitalSignage/forecastrss.xml"
         query: "/rss/channel"
 
         namespaceDeclarations: "declare namespace yweather = 'http://xml.weather.yahoo.com/ns/rss/1.0';"

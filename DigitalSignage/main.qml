@@ -9,14 +9,19 @@ Window
     width:432
     height:768
 
+
     color:"black"
+
+    //BackgroundChanger Module
+    //Rotating Background
+    BackgroundChanger{}
 
     Loader
     {
         id:load1
         width: parent.width
         height: parent.height
-        source: "MainMenu.qml"
+        source: "MetroMenu.qml"
     }
 
     Loader
@@ -24,6 +29,18 @@ Window
         id:load2
         width: parent.width
         height: parent.height
+    }
+
+    Connections
+    {
+        target: load1.item
+
+        onToTimeline:
+        {
+            //console.debug("halojohn>>>>>>>>>>>>>>>>>>>>>>")
+            load1.setSource("Timeline.qml")
+        }
+
     }
 }
 
